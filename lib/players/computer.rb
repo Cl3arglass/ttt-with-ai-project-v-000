@@ -10,11 +10,11 @@ module Players
       cross_move = crosses.sample
 
       if board.valid_move?("5")
-         "5"
+         return "5"
       elsif board.valid_move?(corner_move)
-        corner_move
+        return corner_move
       elsif board.valid_move?(cross_move)
-        cross_move
+        return cross_move
       end
 
       until board.valid_move?(input)
