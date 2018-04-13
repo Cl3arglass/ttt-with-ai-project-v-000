@@ -7,7 +7,7 @@ module Players
       crosses = ["2", "4", "6", "8"]
       input = moves.sample
       corner_move = corners.sample
-      cross_move = cross.sample
+      cross_move = crosses.sample
 
       if board.valid_move?("5")
          "5"
