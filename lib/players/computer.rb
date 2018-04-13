@@ -17,7 +17,7 @@ module Players
         cross_move
       end
 
-      until board.valid_move?("5") || board.valid_move?(input)
+      until board.valid_move?(input)
         input = moves.sample
       end
       input
