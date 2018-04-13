@@ -130,6 +130,7 @@ puts "Y / N ?"
 again = gets.strip
 
 if again == "Y"
+  @board.reset!
   self.start
 end
 # When the game is over, the CLI should prompt the user if they would like to play again and allow
